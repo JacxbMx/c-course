@@ -39,7 +39,7 @@ namespace Generics
 
     //Para crear una clase generico solo neceistamos especificar a continuacion del nombre de la clase entre <> un generico.
     //Un generico se indica simplemente  con una letra que por convencion en c# suele ser una T
-
+   
     class StoreObjects<T>
     {
         private int i = 0;
@@ -62,6 +62,9 @@ namespace Generics
         }
     }
 
+    // Clases genericas con restricciones
+    // las restricciones en las clases genericas surgen para solucionar un error
+    // le podemos decir a unda clase generica que solo maneje objetos que tenga una determinada restriccion o caracteristica
     class Car {
         public string carModel;
          public Car(string carModel)
